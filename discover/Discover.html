@@ -1,0 +1,68 @@
+<html>
+	<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
+		<link rel="stylesheet" href="styledis.css" type="text/css">
+		<link rel="shortcut icon" href="woman-removebg-preview.png" />
+		<title> ARCADIA </title>
+	</head>
+	<BODY>
+		<header>
+				<div id="logo"><img src="woman-removebg-preview.png" height="100px" ><p>ARCADIA</p></div>
+				<div>
+					<a href="Arcadia.html">Home</a>
+					<a href="#">Discover</a>
+					<a href="#">Services</a>
+					<a href="#">Contact</a>
+					<a href="#">Log in</a>
+				</div>
+		</header>
+		<div class="slideshow-container">
+			<div class="mySlides fade" style="background-image:url(hiphop.jpg)">
+			<a href=""><img class="hovertxt" src="hiphoptxt.png"></a>
+			</div>
+			<div class="mySlides fade" style="background-image:url(classical.jpg)" >
+			<a href=""><img class="hovertxt" src="classicaltxt.png"></a>
+			</div>
+			<div class="mySlides fade" style="background-image:url(contem.jpg)" >
+			<a href=""><img class="hovertxt" src="contemtxt.png"></a>
+			</div>
+			<div class="mySlides fade" style="background-image:url(allstyle.jpg)" >
+			<a href=""><img class="hovertxt" src="allstyletxt.png"></a>
+			</div>
+			<div class="mySlides fade" style="background-image:url(freestyle.jpg)" >
+			<a href=""><img class="hovertxt" src="freestyletxt.png"></a>
+			</div>
+			<div class="mySlides fade" style="background-image:url(kpop.jpg)" >
+			<a href=""><img class="hovertxt" src="kpoptxt.png" ></a>
+			</div>
+			<a class="prev" onclick="plusSlides(-1)">❮</a>
+			<a class="next" onclick="plusSlides(1)">❯</a>
+		</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
+</script>
+		</body>
+		</html>
+		

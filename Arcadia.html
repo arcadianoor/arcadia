@@ -1,0 +1,56 @@
+<html>
+	<head> 
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
+		<link rel="stylesheet" href="styling.css" type="text/css">
+		<link rel="shortcut icon" href="woman-removebg-preview.png" />
+		<title> ARCADIA </title>
+	</head>
+	<BODY id="home">
+		<header>
+				<div id="logo"><img src="woman-removebg-preview.png" height="100px" ><p>ARCADIA</p></div>
+				<div>
+					<a href="#">Home</a>
+					<a href="./discover/Discover.html">Discover</a>
+					<a href="#">Services</a>
+					<a href="#">Contact</a>
+					<a href="#">Log in</a>
+				</div>
+		</header>
+		<div class="slider">
+		  <div class="slide active">
+			<h1>ARCADIA</h1>
+			<p>Arcadia is the first ever website for all the Dancers in Pakistan(Karachi).
+			Where we celebrate the art of movement and self-expression through dance</p>
+		  </div>
+		  <div class="slide">
+			<h1>ARCADIA</h1>
+			<p>Our website is dedicated to showcasing the beauty and diversity of dance in all its forms,
+			from classical ballet to modern hip-hop and everything in between.</p>
+		  </div>
+		  <div class="slide">
+			<h1>ARCADIA</h1>
+			<p>Whether you are a seasoned professional or a beginner taking your first steps,
+			our website is a place where you can discover new styles and find inspiration for your own dance journey.</p>
+		  </div>
+		  <div class="slide">
+			<h1>ARCADIA</h1>
+			<p>Join us as we explore the rich history and culture of dance, share stories from dancers around the nation,
+			and celebrate the joy and passion that dance brings to our lives.jhd</p>
+		  </div>
+		</div>
+	<div align="Center"><a href= "./discover/Discover.html"><button>Start Your Journey</button></a><div>
+	<script>
+		var slides = document.querySelectorAll('.slide');
+		var currentSlide = 0;
+		var slideInterval = setInterval(nextSlide, 4000);
+
+		function nextSlide() {
+		  slides[currentSlide].classList.remove('active');
+		  currentSlide = (currentSlide + 1) % slides.length;
+		  slides[currentSlide].classList.add('active');
+		}
+</script>
+</body>
+</html>
